@@ -5,7 +5,7 @@
   "author": "Ruben Oostinga <ruben.oostinga@gmail.com>",
   "license": "MIT",
   "scripts":{
-    "start": "lerna run start",
+    "start": "lerna run start --stream",
     "postinstall":"lerna bootstrap"
   },
   "dependencies": {

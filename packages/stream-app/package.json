@@ -1,9 +1,13 @@
 {
   "name": "stream-app",
   "version": "1.0.0",
-  "scripts": {},
+  "scripts": {
+    "start": "BABEL_ENV=node node server.babel.js"
+  },
   "dependencies": {
     "babel-loader": "^7.1.1",
+    "babel-register": "^6.24.1",
+    "koa": "^2.3.0",
     "react": "^15.6.1",
     "webpack": "^3.4.1"
   },
