@@ -1,0 +1,16 @@
+{
+  "name": "stream-app",
+  "version": "1.0.0",
+  "scripts": {},
+  "dependencies": {
+    "babel-loader": "^7.1.1",
+    "react": "^15.6.1",
+    "webpack": "^3.4.1"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1"
+  }
+}
