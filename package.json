@@ -1,0 +1,10 @@
+{
+  "name": "react-stream-experiment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ruben Oostinga <ruben.oostinga@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lerna": "^2.0.0"
+  }
+}
