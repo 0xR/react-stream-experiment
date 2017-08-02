@@ -4,7 +4,6 @@ import { renderToStream } from 'react-dom/node-stream';
 
 const app = new Koa();
 
-// response
 app.use(ctx => {
   ctx.body = renderToStream(<h1>hello!</h1>);
 });
