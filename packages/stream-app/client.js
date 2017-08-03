@@ -1,9 +1,9 @@
 import { get } from 'http';
 import { promisify } from 'util';
 
-function toMicros(hrtime) {
+function toMillis(hrtime) {
   const [seconds, nanos] = hrtime;
-  return `${Math.round((seconds * 1e9 + nanos) / 1e3)}µs`;
+  return `${((seconds * 1e9 + nanos) / 1e6).toFixed(1)}ms`;
 }
 
 async function doRequest() {
@@ -13,10 +13,10 @@ async function doRequest() {
     get('http://localhost:3000', res => {
       res.on('data', data => {
         const now = process.hrtime();
-        const sinceLast = last ? `, +${toMicros(process.hrtime(last))}` : '';
-        const time = `[${toMicros(process.hrtime(start))}${sinceLast}]`;
+        const sinceLast = last ? `, +${toMillis(process.hrtime(last))}` : '';
+        const time = `[${toMillis(process.hrtime(start))}${sinceLast}]`;
         last = now;
-        console.log(time, data.toString('utf8'));
+        console.log(time, data.length);
       });
       res.on('end', resolve);
       res.on('error', reject);

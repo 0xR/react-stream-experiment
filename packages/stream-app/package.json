@@ -4,7 +4,7 @@
   "scripts": {
     "start": "BABEL_ENV=node run-p server client",
     "server": "nodemon -i 'client*' server.babel.js",
-    "client": "wait-on tcp:3000 && nodemon -i 'server*' client.babel.js"
+    "client": "nodemon -x 'wait-on tcp:3000 -w 0 && node client.babel.js'"
   },
   "dependencies": {
     "babel-loader": "^7.1.1",
