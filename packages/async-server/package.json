@@ -1,0 +1,19 @@
+{
+  "name": "async-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "BABEL_ENV=node nodemon server.babel.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.11.0",
+    "view": "^1.0.0",
+    "koa": "^2.3.0",
+    "react": "^16.0.0-beta.2",
+    "react-dom": "^16.0.0-beta.2"
+  }
+}

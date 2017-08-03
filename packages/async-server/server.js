@@ -2,9 +2,10 @@ import Koa from 'koa';
 import React from 'react';
 import { renderToStream } from 'react-dom/node-stream';
 
-import Page from './Page';
+import newPage from 'view/Page';
 
 const app = new Koa();
+const Page = newPage(React);
 
 app.use(ctx => {
   ctx.type = '.html';
