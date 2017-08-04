@@ -2,10 +2,11 @@
   "name": "debug-client",
   "version": "1.0.0",
   "scripts": {
-    "start": "BABEL_ENV=node nodemon -x 'wait-on tcp:3000 -w 0 && node client.babel.js'"
+    "start": "BABEL_ENV=node nodemon -x 'while true; do wait-on tcp:3000 -w 0 && node client.babel.js && wait-on -r tcp:3000 -w 0; done'"
   },
   "devDependencies": {
     "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2",
     "wait-on": "^2.0.2"
   }
 }

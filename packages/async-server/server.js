@@ -1,6 +1,7 @@
 import Koa from 'koa';
 import React from 'react';
 import { renderToStream } from 'react-dom/node-stream';
+import { renderToString } from 'react-dom/server';
 
 import newPage from 'view/Page';
 
@@ -8,8 +9,12 @@ const app = new Koa();
 const Page = newPage(React);
 
 app.use(ctx => {
-  ctx.type = '.html';
-  ctx.body = renderToStream(<Page />);
+  if (ctx.url === '/async') {
+    ctx.type = '.html';
+    ctx.body = renderToStream(<Page />);
+  } else if (ctx.url === '/sync') {
+    ctx.body = renderToString(<Page />);
+  }
 });
 
 app.listen(3000, () => {
