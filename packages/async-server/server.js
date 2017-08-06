@@ -1,7 +1,6 @@
 import Koa from 'koa';
 import React from 'react';
-import { renderToStream } from 'react-dom/node-stream';
-import { renderToString } from 'react-dom/server';
+import { renderToString, renderToStream } from 'react-dom/server';
 
 import { makePage } from 'view';
 
