@@ -2,10 +2,10 @@ import Koa from 'koa';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 
-import newPage from 'view/Page';
+import { makePage } from 'view';
 
 const app = new Koa();
-const Page = newPage(React);
+const Page = makePage(React);
 
 app.use(ctx => {
   ctx.body = renderToString(<Page />);

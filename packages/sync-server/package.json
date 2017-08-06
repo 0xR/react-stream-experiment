@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "BABEL_ENV=node nodemon server.babel.js"
+    "start": "NODE_ENV=production node dist/server.js",
+    "dev": "BABEL_ENV=node nodemon server.babel.js",
+    "build": "BABEL_ENV=node babel -d dist *.js"
   },
   "keywords": [],
   "author": "",

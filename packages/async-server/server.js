@@ -3,10 +3,10 @@ import React from 'react';
 import { renderToStream } from 'react-dom/node-stream';
 import { renderToString } from 'react-dom/server';
 
-import newPage from 'view/Page';
+import { makePage } from 'view';
 
 const app = new Koa();
-const Page = newPage(React);
+const Page = makePage(React);
 
 app.use(ctx => {
   if (ctx.url === '/async') {

@@ -49,21 +49,21 @@ async function doSample(url) {
   );
 
   const sampleWithPercentage = sample.map(([ttfb, totalTime]) => [
-    prettyPercent(ttfb / totalTime * 100),
     prettyMillis(ttfb),
     prettyMillis(totalTime),
+    prettyPercent(ttfb / totalTime * 100),
   ]);
 
   console.log(sampleWithPercentage);
-
-  // for (let i = 0; i < samplecount; i++) {
-  //   console.log(await doRequest('http://localhost:3000/sync'));
-  // }
 }
 
 async function runExperiment() {
+  console.log('sampling react 16 streaming')
   await doSample('http://localhost:3000/async');
+  console.log('sampling react 16 sync')
   await doSample('http://localhost:3000/sync');
+  console.log('sampling react 15 sync')
+  await doSample('http://localhost:3001/');
 }
 
 runExperiment().catch(e => console.error(e));
