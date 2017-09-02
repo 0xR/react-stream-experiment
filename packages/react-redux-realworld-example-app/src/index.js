@@ -14,7 +14,7 @@ import ProfileFavorites from './components/ProfileFavorites';
 import Register from './components/Register';
 import Settings from './components/Settings';
 
-ReactDOM.render((
+export default (
   <Provider store={store}>
     <Router history={hashHistory}>
       <Route path="/" component={App}>
@@ -30,4 +30,4 @@ ReactDOM.render((
       </Route>
     </Router>
   </Provider>
-), document.getElementById('root'));
+);
