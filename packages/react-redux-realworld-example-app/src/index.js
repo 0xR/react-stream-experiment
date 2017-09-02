@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import React from 'react';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import { Route, IndexRoute, RouterContext, match } from 'react-router';
 import store from './store';
 
 import App from './components/App';
@@ -14,20 +14,30 @@ import ProfileFavorites from './components/ProfileFavorites';
 import Register from './components/Register';
 import Settings from './components/Settings';
 
-export default (
-  <Provider store={store}>
-    <Router history={hashHistory}>
-      <Route path="/" component={App}>
-        <IndexRoute component={Home} />
-        <Route path="login" component={Login} />
-        <Route path="register" component={Register} />
-        <Route path="editor" component={Editor} />
-        <Route path="editor/:slug" component={Editor} />
-        <Route path="article/:id" component={Article} />
-        <Route path="settings" component={Settings} />
-        <Route path="@:username" component={Profile} />
-        <Route path="@:username/favorites" component={ProfileFavorites} />
-      </Route>
-    </Router>
-  </Provider>
+const routes = (
+  <Route path="/" component={App}>
+    <IndexRoute component={Home} />
+    <Route path="login" component={Login} />
+    <Route path="register" component={Register} />
+    <Route path="editor" component={Editor} />
+    <Route path="editor/:slug" component={Editor} />
+    <Route path="article/:id" component={Article} />
+    <Route path="settings" component={Settings} />
+    <Route path="@:username" component={Profile} />
+    <Route path="@:username/favorites" component={ProfileFavorites} />
+  </Route>
 );
+
+export default (url, state) => new Promise((resolve, reject) => {
+  match({ routes, location: url }, (error, redirectLocation, renderProps) => {
+    if (error) {
+      reject(error);
+    }
+    if (redirectLocation) {
+      reject(redirectLocation);
+    }
+    return resolve(<Provider store={store}>
+      <RouterContext {...renderProps} />
+    </Provider>);
+  });
+});

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "NODE_ENV=production NODE_ENV=$(pwd) node dist/server.js",
     "prestart": "npm run build",
-    "dev": "BABEL_ENV=node NODE_PATH=$(pwd)/node_modules nodemon -x ../../node_modules/.bin/babel-node server.js",
+    "dev": "BABEL_ENV=node NODE_PATH=$(pwd)/node_modules nodemon -w . -w ../react-redux-realworld-example-app -x ../../node_modules/.bin/babel-node server.js",
     "build": "BABEL_ENV=node babel -d dist *.js"
   },
   "keywords": [],

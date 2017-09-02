@@ -9,14 +9,14 @@ const mapStateToProps = state => ({
   appLoaded: state.common.appLoaded,
   appName: state.common.appName,
   currentUser: state.common.currentUser,
-  redirectTo: state.common.redirectTo
+  redirectTo: state.common.redirectTo,
 });
 
 const mapDispatchToProps = dispatch => ({
   onLoad: (payload, token) =>
     dispatch({ type: APP_LOAD, payload, token, skipTracking: true }),
   onRedirect: () =>
-    dispatch({ type: REDIRECT })
+    dispatch({ type: REDIRECT }),
 });
 
 class App extends React.Component {
@@ -28,12 +28,7 @@ class App extends React.Component {
   }
 
   componentWillMount() {
-    const token = window.localStorage.getItem('jwt');
-    if (token) {
-      agent.setToken(token);
-    }
-
-    this.props.onLoad(token ? agent.Auth.current() : null, token);
+    this.props.onLoad(null, undefined);
   }
 
   render() {
@@ -42,7 +37,8 @@ class App extends React.Component {
         <div>
           <Header
             appName={this.props.appName}
-            currentUser={this.props.currentUser} />
+            currentUser={this.props.currentUser}
+          />
           {this.props.children}
         </div>
       );
@@ -51,14 +47,15 @@ class App extends React.Component {
       <div>
         <Header
           appName={this.props.appName}
-          currentUser={this.props.currentUser} />
+          currentUser={this.props.currentUser}
+        />
       </div>
     );
   }
 }
 
 App.contextTypes = {
-  router: PropTypes.object.isRequired
+  router: PropTypes.object.isRequired,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
