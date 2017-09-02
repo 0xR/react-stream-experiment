@@ -27,10 +27,6 @@ class App extends React.Component {
     }
   }
 
-  componentWillMount() {
-    this.props.onLoad(null, undefined);
-  }
-
   render() {
     if (this.props.appLoaded) {
       return (

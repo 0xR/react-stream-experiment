@@ -1,0 +1,254 @@
+{
+  "article": {},
+  "articleList": {
+    "tags": [
+      "test",
+      "dragons",
+      "training",
+      "angular",
+      "Development",
+      "testing",
+      "asd",
+      "asdf",
+      "elm",
+      "article",
+      "Tag",
+      "tag1",
+      "a",
+      "markdown",
+      "as",
+      "Hello",
+      "react",
+      "new",
+      "d",
+      "sdf"
+    ],
+    "articles": [
+      {
+        "title": "Hello",
+        "slug": "hello-4hotow",
+        "body": "Testando!",
+        "createdAt": "2017-09-02T15:42:52.474Z",
+        "updatedAt": "2017-09-02T15:42:52.474Z",
+        "tagList": [
+          "programaçao",
+          "php"
+        ],
+        "description": "SObre qualquer coisa",
+        "author": {
+          "username": "jonataa",
+          "bio": null,
+          "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 0
+      },
+      {
+        "title": "dwe",
+        "slug": "dwe-zbcxnb",
+        "body": "<h1>hello</h2>",
+        "createdAt": "2017-09-02T13:30:46.907Z",
+        "updatedAt": "2017-09-02T13:30:46.907Z",
+        "tagList": [],
+        "description": "e",
+        "author": {
+          "username": "qqqqqqqww",
+          "bio": null,
+          "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 0
+      },
+      {
+        "title": "Pocho",
+        "slug": "pocho-zr4s89",
+        "body": "pocho pocho pocho",
+        "createdAt": "2017-09-02T13:03:23.961Z",
+        "updatedAt": "2017-09-02T13:03:23.961Z",
+        "tagList": [],
+        "description": "pocho",
+        "author": {
+          "username": "ciaociaociao",
+          "bio": null,
+          "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 0
+      },
+      {
+        "title": "Super test post",
+        "slug": "super-test-post-qr4ql9",
+        "body": "# Title",
+        "createdAt": "2017-09-02T11:07:31.928Z",
+        "updatedAt": "2017-09-02T11:07:31.928Z",
+        "tagList": [],
+        "description": "Dunno",
+        "author": {
+          "username": "bumbus",
+          "bio": "ads",
+          "image": "",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 0
+      },
+      {
+        "title": "Das Pferd und der Gurkensalat",
+        "slug": "das-pferd-und-der-gurkensalat-tzbvjg",
+        "body": "Das Pferd __mag__ den  Gurkensalat **wirklich**",
+        "createdAt": "2017-09-02T10:16:10.755Z",
+        "updatedAt": "2017-09-02T10:16:10.755Z",
+        "tagList": [
+          "test"
+        ],
+        "description": "Testen der App",
+        "author": {
+          "username": "faenvie",
+          "bio": null,
+          "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 0
+      },
+      {
+        "title": "sdfdsfds",
+        "slug": "sdfdsfds-oudxh7",
+        "body": "fdsfdsf",
+        "createdAt": "2017-09-02T10:08:53.099Z",
+        "updatedAt": "2017-09-02T10:08:53.099Z",
+        "tagList": [],
+        "description": "fdsfds",
+        "author": {
+          "username": "n00b",
+          "bio": "hello wolrd 123",
+          "image": "https://avatars3.githubusercontent.com/u/4666757?v=4&s=460",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 1
+      },
+      {
+        "title": "sdfdsfds",
+        "slug": "sdfdsfds-v8d7ti",
+        "body": "fdsfdsfds",
+        "createdAt": "2017-09-02T10:08:44.911Z",
+        "updatedAt": "2017-09-02T10:08:44.911Z",
+        "tagList": [],
+        "description": "fds",
+        "author": {
+          "username": "n00b",
+          "bio": "hello wolrd 123",
+          "image": "https://avatars3.githubusercontent.com/u/4666757?v=4&s=460",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 1
+      },
+      {
+        "title": "Lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        "slug": "lorem-ipsum-dolor-sit-amet-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-magna-aliquyam-erat-sed-diam-voluptua-at-vero-eos-et-accusam-et-justo-duo-dolores-et-ea-rebum-stet-clita-kasd-gubergren-no-sea-takimata-sanctus-est-lorem-ipsum-dolor-sit-amet-5s2pb3",
+        "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        "createdAt": "2017-09-02T10:00:28.315Z",
+        "updatedAt": "2017-09-02T14:05:42.474Z",
+        "tagList": [
+          "ddd",
+          "ccc",
+          "bb",
+          "aaa"
+        ],
+        "description": "",
+        "author": {
+          "username": "n00b",
+          "bio": "hello wolrd 123",
+          "image": "https://avatars3.githubusercontent.com/u/4666757?v=4&s=460",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 1
+      },
+      {
+        "title": "hello",
+        "slug": "hello-yfpbtq",
+        "body": "fds",
+        "createdAt": "2017-09-02T09:55:30.135Z",
+        "updatedAt": "2017-09-02T09:55:30.135Z",
+        "tagList": [
+          "fdsfds",
+          "d",
+          "sdd",
+          "dsff"
+        ],
+        "description": "test",
+        "author": {
+          "username": "n00b",
+          "bio": "hello wolrd 123",
+          "image": "https://avatars3.githubusercontent.com/u/4666757?v=4&s=460",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 1
+      },
+      {
+        "title": "test",
+        "slug": "test-32e4iq",
+        "body": "test",
+        "createdAt": "2017-09-02T07:20:56.855Z",
+        "updatedAt": "2017-09-02T07:20:56.855Z",
+        "tagList": [],
+        "description": "test",
+        "author": {
+          "username": "Heraklit",
+          "bio": null,
+          "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 3
+      }
+    ],
+    "articlesCount": 500,
+    "currentPage": 0,
+    "tab": "all"
+  },
+  "auth": {},
+  "common": {
+    "appName": "Conduit",
+    "token": null,
+    "viewChangeCounter": 0,
+    "appLoaded": true,
+    "currentUser": null
+  },
+  "editor": {},
+  "home": {
+    "tags": [
+      "test",
+      "dragons",
+      "training",
+      "angular",
+      "Development",
+      "testing",
+      "asd",
+      "asdf",
+      "elm",
+      "article",
+      "Tag",
+      "tag1",
+      "a",
+      "markdown",
+      "as",
+      "Hello",
+      "react",
+      "new",
+      "d",
+      "sdf"
+    ]
+  },
+  "profile": {},
+  "settings": {
+    "inProgress": true
+  }
+}

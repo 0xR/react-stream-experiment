@@ -1,18 +1,12 @@
 import { applyMiddleware, createStore } from 'redux';
-import { createLogger } from 'redux-logger'
+import { createLogger } from 'redux-logger';
 import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
 import { promiseMiddleware, localStorageMiddleware } from './middleware';
 import reducer from './reducer';
+import initialState from './initial-state.json';
 
-const getMiddleware = () => {
-  if (process.env.NODE_ENV === 'production') {
-    return applyMiddleware(promiseMiddleware, localStorageMiddleware);
-  } else {
-    // Enable additional logging in non-production environments.
-    return applyMiddleware(promiseMiddleware, localStorageMiddleware, createLogger())
-  }
-}
+const getMiddleware = () => applyMiddleware(promiseMiddleware, localStorageMiddleware);
 
-const store = createStore(reducer, composeWithDevTools(getMiddleware()))
+const store = createStore(reducer, initialState, composeWithDevTools(getMiddleware()));
 
 export default store;
